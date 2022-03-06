@@ -24,6 +24,7 @@ const sess = {
 };
 app.use(session(sess));
 
+// initialize handlebars setup (without this won't work)
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
